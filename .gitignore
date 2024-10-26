@@ -3,3 +3,4 @@ target
 
 src/main/resources/data/*
 !src/main/resources/data/.gitkeep
+RegistrationBotApp/*db
