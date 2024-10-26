@@ -17,16 +17,16 @@ The **Registration Bot Software** is a desktop application designed to automate 
 
 ## Installation
 
-1. **Download a zip file**:
-    ```bash
-    https://github.com/vilka-9999/registration-bot-app/tree/main
-    ```
+1. **Download the Application**: 
+   Download the ZIP file from the following link:
+   [Registration Bot App ZIP](https://github.com/vilka-9999/registration-bot-app/blob/main/RegistrationBotApp.zip)
 
-2. **Run the application**:
-    ```bash
-    unzip the file and run the RegistrationBot Application
-    ```
+2. **Unzip the File**: 
+   Extract the contents of the downloaded ZIP file to your desired location.
 
+3. **Run the Application**: 
+   Inside the unzipped folder, locate and run the `RegistrationBot` executable.
+    
 ## Usage
 
 1. Launch the application.
