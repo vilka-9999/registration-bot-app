@@ -1,0 +1,18 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	JRE
+Check launcher:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\JRE\bin\javaw.exe (OK)
+Version string: 1.011.000_025 / 64-Bit (OK)
+Launcher:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\JRE\bin\javaw.exe
+Launcher args:	-jar "C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe"
+Args length:	100/32768 chars
+Exit code:	0

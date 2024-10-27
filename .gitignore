@@ -3,4 +3,5 @@ target
 
 src/main/resources/data/*
 !src/main/resources/data/.gitkeep
-RegistrationBotApp/*db
+RegistrationBotAppV1/JRE
+RegistrationBotAppV1.zip
