@@ -1,18 +1,57 @@
 
 
 Version:	3.50
-CmdLine:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe --l4j-debug
+CmdLine:	C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe --l4j-debug
 JNI:		No
 WOW64:		Yes
-Working dir:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\.
+Working dir:	C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\.
 Requires JDK:	No
 Requires 64-Bit: No
 Java min ver:	
 Java max ver:	
-JRE paths:	JRE
-Check launcher:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\JRE\bin\javaw.exe (OK)
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\nvczm\Documents\apache-maven-3.9.9\bin;C:\Users\nvczm\AppData\Local\Programs\Python\Launcher\;C:\Users\nvczm\AppData\Local\Microsoft\WindowsApps;C:\Users\nvczm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nvczm\.dotnet\tools;C:\Users\nvczm\AppData\Local\GitHubDesktop\bin;C:\Users\nvczm\AppData\Local\JetBrains\IntelliJ IDEA 2024.3.1\bin;;C:\Program Files\Java\jdk-21\bin
+JRE paths:	;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\nvczm\Documents\apache-maven-3.9.9\bin;C:\Users\nvczm\AppData\Local\Programs\Python\Launcher\;C:\Users\nvczm\AppData\Local\Microsoft\WindowsApps;C:\Users\nvczm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nvczm\.dotnet\tools;C:\Users\nvczm\AppData\Local\GitHubDesktop\bin;C:\Users\nvczm\AppData\Local\JetBrains\IntelliJ IDEA 2024.3.1\bin;;C:\Program Files\Java\jdk-21\bin
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\system32\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\dotnet\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Git\cmd\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Microsoft SQL Server\150\Tools\Binn\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\bin\javaw.exe (not found)
+Check launcher:	C:\Users\nvczm\Documents\apache-maven-3.9.9\bin\javaw.exe (not found)
+Check launcher:	C:\Users\nvczm\AppData\Local\Programs\Python\Launcher\bin\javaw.exe (not found)
+Check launcher:	C:\Users\nvczm\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\nvczm\AppData\Local\Programs\Microsoft VS Code\bin\javaw.exe (not found)
+Check launcher:	C:\Users\nvczm\.dotnet\tools\bin\javaw.exe (not found)
+Check launcher:	C:\Users\nvczm\AppData\Local\GitHubDesktop\bin\javaw.exe (not found)
+Check launcher:	C:\Users\nvczm\AppData\Local\JetBrains\IntelliJ IDEA 2024.3.1\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe (OK)
+Version string: 1.021.000_005 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-21\bin\javaw.exe
+Launcher args:	-jar "C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe"
+Args length:	112/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\JRE
+Check launcher:	C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\JRE\bin\javaw.exe (OK)
 Version string: 1.011.000_025 / 64-Bit (OK)
-Launcher:	C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\JRE\bin\javaw.exe
-Launcher args:	-jar "C:\Users\HP\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe"
-Args length:	100/32768 chars
+Launcher:	C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\JRE\bin\javaw.exe
+Launcher args:	-jar "C:\Users\nvczm\OneDrive\Desktop\my_projects\registration-bot-app\RegistrationBotAppV1\RegistrationBot.exe"
+Args length:	112/32768 chars
 Exit code:	0
