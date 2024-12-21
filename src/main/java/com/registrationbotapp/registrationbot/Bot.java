@@ -136,7 +136,7 @@ public class Bot extends ChromeDriver {
 
         // button for selecting a term
         WebElement buttonContinue = wait.until(ExpectedConditions.presenceOfElementLocated(
-            By.xpath("//*[@id='term-go']")));
+            By.id("term-go")));
         buttonContinue.click();
 
         // check if everything worked
@@ -163,7 +163,7 @@ public class Bot extends ChromeDriver {
 
             // search button
             WebElement buttonSearch = wait.until(ExpectedConditions.presenceOfElementLocated(
-                By.xpath("//*[@id='search-go']")));
+                By.id("search-go")));
             buttonSearch.click();
             
             /*try {
@@ -212,12 +212,12 @@ public class Bot extends ChromeDriver {
 
                 // search again button
                 WebElement buttonSearchAgain = wait.until(ExpectedConditions.presenceOfElementLocated(
-                    By.xpath("//*[@id='search-again-button']")));
+                    By.id("search-again-button")));
                 buttonSearchAgain.click();
 
                 // form clean button
                 WebElement buttonClear = wait.until(ExpectedConditions.presenceOfElementLocated(
-                    By.xpath("//*[@id='search-clear']")));
+                    By.id("search-clear")));
                 buttonClear.click();
             }
 
@@ -227,38 +227,50 @@ public class Bot extends ChromeDriver {
 
     // register for classes
     public void register(List<Map<String, String>> courses){
+        // tab for crn search
+        WebElement crnsTab = wait.until(ExpectedConditions.presenceOfElementLocated(
+            By.id("enterCRNs-tab")));
+        crnsTab.click();
+
+        int formNum = 0;
 
         for (Map<String, String> course : courses) {
 
-            // form for course title
-            WebElement titleForm = wait.until(ExpectedConditions.presenceOfElementLocated(
-                By.id("txt_courseTitle")));
-            titleForm.sendKeys(course.get("title"));
+            formNum++;
+            // form for course crn
+            WebElement crnForm = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.id("txt_crn" + formNum)));
+            crnForm.sendKeys(course.get("crn"));
 
-            // search button
+            // add new form
             WebElement buttonSearch = wait.until(ExpectedConditions.presenceOfElementLocated(
-                By.xpath("//*[@id='search-go']")));
+                By.id("addAnotherCRN")));
             buttonSearch.click();
-
-           
-
-            // select course dataId
-            WebElement courseElement = checkWait.until(ExpectedConditions.presenceOfElementLocated(
-                By.xpath("//*[@class='section-details-link' and contains(@data-attributes, " + course.get("crn") + ")]")));
-            String dataId = courseElement.findElement(By.xpath("..")).getAttribute("data-id");
-          
             
+        }
 
-            // search again button
-            WebElement buttonSearchAgain = wait.until(ExpectedConditions.presenceOfElementLocated(
-                By.xpath("//*[@id='search-again-button']")));
-            buttonSearchAgain.click();
+        // add courses by crn
+        WebElement buttonSearch = wait.until(ExpectedConditions.presenceOfElementLocated(
+            By.id("addCRNbutton")));
+        buttonSearch.click();
 
-            // form clean button
-            WebElement buttonClear = wait.until(ExpectedConditions.presenceOfElementLocated(
-                By.xpath("//*[@id='search-clear']")));
-            buttonClear.click();
+        // wait for 0.1 seconds utill the button becomes clickable
+        try {
+            Thread.sleep(100);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
 
+        // submit registration
+        WebElement buttonSubmit = wait.until(ExpectedConditions.presenceOfElementLocated(
+            By.id("saveButton")));
+        buttonSubmit.click();
+
+        // wait for 1 second to make sure everything worked
+        try {
+            Thread.sleep(2000);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
         }
 
     }

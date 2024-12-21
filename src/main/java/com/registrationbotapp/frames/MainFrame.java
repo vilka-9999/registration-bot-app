@@ -7,8 +7,6 @@ import java.awt.event.*;
 import com.registrationbotapp.frames.components.*;
 import com.registrationbotapp.registrationbot.BotUtils;
 
-import net.bytebuddy.jar.asm.Label;
-
 import java.util.*;
 import java.util.List;
 import java.net.URL;
@@ -23,6 +21,7 @@ public class MainFrame extends JFrame {
 
 
     public MainFrame() {
+        
 
         createFrame();
         JPanel panel = createMainPanel();
@@ -57,42 +56,25 @@ public class MainFrame extends JFrame {
 
     // create and split mainPanel into grids
     private JPanel createMainPanel() {
-
-        JPanel mainPanel = new JPanel(new GridBagLayout());
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.fill = GridBagConstraints.BOTH;
-
         
-
+        JPanel mainPanel = new JPanel(new BorderLayout());
+        JPanel centerPanel = new JPanel(new GridLayout(1, 2));
+        // panel for user data
         JPanel userDataPanel = new JPanel();
         userDataPanel.setBackground(new Color(27,104,40));
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.weightx = 1;
-        gbc.weighty = 6;
-        gbc.gridwidth = 1;
         fillUserDataPanel(userDataPanel);
-        mainPanel.add(userDataPanel, gbc);
-
+        centerPanel.add(userDataPanel);
+        // panel for course list
         JPanel courseDataPanel = new JPanel();
         courseDataPanel.setBackground(new Color(242,243,219));
-        gbc.gridx = 1;
-        gbc.gridy = 1;
-        gbc.weightx = 4;
-        gbc.weighty = 6;
-        gbc.gridwidth = 1;
-        JPanel displayCourses =  fillCourseDataPanel(courseDataPanel);
-        mainPanel.add(courseDataPanel, gbc);
-
+        JPanel displayCourses =  fillCourseDataPanel(courseDataPanel); // need for an add course button
+        centerPanel.add(courseDataPanel);
+        mainPanel.add(centerPanel, BorderLayout.CENTER);
+        // save course form
         JPanel saveCoursePanel = new JPanel();
         saveCoursePanel.setBackground(new Color(47,158,66));
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
-        gbc.gridwidth = 2;
         fillSaveCoursePanel(saveCoursePanel, displayCourses);
-        mainPanel.add(saveCoursePanel, gbc);
+        mainPanel.add(saveCoursePanel, BorderLayout.NORTH);
 
         return mainPanel;
 
@@ -146,7 +128,6 @@ public class MainFrame extends JFrame {
         ButtonSave saveUser = new ButtonSave("user", profile, pin, semester);
         formPanel.add(saveUser, gbc);
 
-
         panel.add(formPanel);
     }
 
@@ -154,16 +135,24 @@ public class MainFrame extends JFrame {
     private JPanel fillCourseDataPanel(JPanel panel) {
 
         // display courses in th edattabase
+        panel.setLayout(new GridLayout(2,1));
+        // display courses list
+        JPanel panelTop = new JPanel();
+        panelTop.setOpaque(false);
         JPanel displayCourses = new JPanel();
         displayCourses.setLayout(new BoxLayout(displayCourses, BoxLayout.Y_AXIS));
         displayCourses.setOpaque(false);
         displayCoursesData(displayCourses);
-        panel.add(displayCourses);
-
+        panelTop.add(displayCourses);
+        panel.add(panelTop);
+        // buttons for bot
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setOpaque(false);
         ButtonBotRun checkRun = new ButtonBotRun("Check courses", "check", displayCourses);
         ButtonBotRun regRun = new ButtonBotRun("Register","register", displayCourses);
-        panel.add(checkRun);
-        panel.add(regRun);
+        buttonPanel.add(checkRun);
+        buttonPanel.add(regRun);
+        panel.add(buttonPanel);
 
         return displayCourses;
 

@@ -1,5 +1,7 @@
 package com.registrationbotapp;
 
+import javax.swing.SwingUtilities;
+
 import com.registrationbotapp.frames.MainFrame;
 import com.registrationbotapp.registrationbot.BotUtils;
 

@@ -34,8 +34,8 @@ public class ButtonBotRun extends JButton {
                 JDialog dialog = new JDialog();
                 dialog.setAlwaysOnTop(true);
                 JOptionPane.showMessageDialog(dialog, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
-            } catch(Exception randomE) {
-                JOptionPane.showMessageDialog(null, "Something went wrong", "ERROR", JOptionPane.ERROR_MESSAGE);
+            //} catch(Exception randomE) {
+                //OptionPane.showMessageDialog(null, "Something went wrong", "ERROR", JOptionPane.ERROR_MESSAGE);
             }
             // show changes in courses checking result
             MainFrame.displayCoursesData(displayCourses);

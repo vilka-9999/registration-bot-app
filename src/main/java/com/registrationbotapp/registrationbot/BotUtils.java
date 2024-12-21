@@ -12,8 +12,8 @@ import org.openqa.selenium.SessionNotCreatedException;
 public class BotUtils {
 
     // path for jar. Creates appdata.db in the folder of the jar file
-    private static String DATABASE_URL = "jdbc:sqlite:appdata.db";
-    // private static String DATABASE_URL = "jdbc:sqlite:src\main\resources\dataappdata.db"; // project url
+    //private static String DATABASE_URL = "jdbc:sqlite:appdata.db";
+    private static String DATABASE_URL = "jdbc:sqlite:registration-bot-app/src/main/resources/data/appdata.db"; // project url
     
 
     public static void botRun(String action) throws BotException {
@@ -38,8 +38,7 @@ public class BotUtils {
         bot.openPage();
 
         // choose link to open depending n action type
-        // TODO:
-        String regType = register ? "" : "classSearchLink";
+        String regType = register ? "registerLink" : "classSearchLink";
         bot.chooseRegType(regType);
 
         // check if user is logged in and throw an excaption if does not
