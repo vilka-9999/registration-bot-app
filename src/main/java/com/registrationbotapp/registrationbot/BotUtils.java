@@ -12,8 +12,8 @@ import org.openqa.selenium.SessionNotCreatedException;
 public class BotUtils {
 
     // path for jar. Creates appdata.db in the folder of the jar file
-    //private static String DATABASE_URL = "jdbc:sqlite:appdata.db";
-    private static String DATABASE_URL = "jdbc:sqlite:registration-bot-app/src/main/resources/data/appdata.db"; // project url
+    private static String DATABASE_URL = "jdbc:sqlite:appdata.db";
+    //private static String DATABASE_URL = "jdbc:sqlite:registration-bot-app/src/main/resources/data/appdata.db"; // project url
     
 
     public static void botRun(String action) throws BotException {
